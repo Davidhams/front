@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script>const RAIZ = "../";</script>
+    <script src="../js/config.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/nav.js"></script>
+    <script>exigirAdmin();</script>
+    <title>Painel Admin</title>
+</head>
+
+<body>
+    <header>
+        <nav id="app-nav"></nav>
+        <hr>
+    </header>
+    <main>
+        <h1>Painel Admin</h1>
+        <p>Acesso total ao cadastro, listagem, consulta, atualização e exclusão de todas as entidades.</p>
+        <br>
+        <div class="grade_admin">
+            <a href="./produto_listar.html">Produtos</a>
+            <a href="./fornecedor_listar.html">Fornecedores</a>
+            <a href="./cliente_listar.html">Clientes</a>
+            <a href="./endereco_listar.html">Endereços</a>
+            <a href="./pedido_listar.html">Pedidos</a>
+            <a href="./item_pedido_listar.html">Itens do Pedido</a>
+            <a href="./kit_pronto_listar.html">Kits Prontos</a>
+            <a href="./item_kit_listar.html">Itens do Kit</a>
+            <a href="./entrega_listar.html">Entregas</a>
+            <a href="./avaliacao_listar.html">Avaliações</a>
+        </div>
+    </main>
+</body>
+
+</html>

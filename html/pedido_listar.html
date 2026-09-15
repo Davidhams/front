@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script>const RAIZ = "../";</script>
+    <script src="../js/config.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/nav.js"></script>
+    <script>exigirAdmin();</script>
+    <script src="../js/pedido_listar.js" defer></script>
+    <title>Listar Pedido</title>
+</head>
+
+<body>
+    <header>
+        <nav id="app-nav"></nav>
+        <nav class="subnav">
+            <a href="./admin_painel.html">Painel Admin</a>
+            <a href="./pedido_cadastrar.html">Cadastrar</a>
+            <a href="./pedido_listar.html" class="ativo">Listar</a>
+            <a href="./pedido_consultar.html">Consultar</a>
+            <a href="./pedido_atualizar.html">Atualizar</a>
+            <a href="./pedido_apagar.html">Apagar</a>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <h1>Listar Pedidos</h1>
+        <br>
+        <p id="resposta"></p>
+        <table>
+            <thead>
+                <tr><th>codPedido</th><th>idCliente</th><th>dataPedido</th><th>tipoEntrega</th><th>status</th><th>valorTotal</th></tr>
+            </thead>
+            <tbody id="tabela_pedido"></tbody>
+        </table>
+    </main>
+</body>
+
+</html>

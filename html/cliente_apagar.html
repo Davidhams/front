@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script>const RAIZ = "../";</script>
+    <script src="../js/config.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/nav.js"></script>
+    <script>exigirAdmin();</script>
+    <script src="../js/cliente_apagar.js" defer></script>
+    <title>Apagar Cliente</title>
+</head>
+
+<body>
+    <header>
+        <nav id="app-nav"></nav>
+        <nav class="subnav">
+            <a href="./admin_painel.html">Painel Admin</a>
+            <a href="./cliente_cadastrar.html">Cadastrar</a>
+            <a href="./cliente_listar.html">Listar</a>
+            <a href="./cliente_consultar.html">Consultar</a>
+            <a href="./cliente_atualizar.html">Atualizar</a>
+            <a href="./cliente_apagar.html" class="ativo">Apagar</a>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <h1>Apagar Cliente</h1>
+        <br>
+        <label for="codBusca">codCliente</label>
+        <input type="number" id="codBusca" required>
+        <br><br>
+        <button id="btn_apagar">Apagar</button>
+        <br><br>
+        <p id="resposta"></p>
+    </main>
+</body>
+
+</html>

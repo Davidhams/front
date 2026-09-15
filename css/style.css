@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+}
+
+header nav a,
+header nav button {
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+main {
+    padding: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    max-width: 420px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th,
+table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.produto_imagem_preview,
+.produto_imagem_tabela {
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.cartao_produto {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.grade_admin {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.grade_admin a {
+    border: 1px solid #ccc;
+    padding: 16px;
+    text-decoration: none;
+    min-width: 200px;
+}
+
+.subnav {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding: 0 16px 16px 16px;
+}
+
+.subnav a.ativo {
+    font-weight: bold;
+    text-decoration: underline;
+}

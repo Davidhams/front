@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script>const RAIZ = "../";</script>
+    <script src="../js/config.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/nav.js"></script>
+    <script>exigirAdmin();</script>
+    <script src="../js/avaliacao_listar.js" defer></script>
+    <title>Listar Avaliação</title>
+</head>
+
+<body>
+    <header>
+        <nav id="app-nav"></nav>
+        <nav class="subnav">
+            <a href="./admin_painel.html">Painel Admin</a>
+            <a href="./avaliacao_cadastrar.html">Cadastrar</a>
+            <a href="./avaliacao_listar.html" class="ativo">Listar</a>
+            <a href="./avaliacao_consultar.html">Consultar</a>
+            <a href="./avaliacao_atualizar.html">Atualizar</a>
+            <a href="./avaliacao_apagar.html">Apagar</a>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <h1>Listar Avaliações</h1>
+        <br>
+        <p id="resposta"></p>
+        <table>
+            <thead>
+                <tr><th>codAvaliacao</th><th>idCliente</th><th>idProduto</th><th>nota</th><th>dataAvaliacao</th></tr>
+            </thead>
+            <tbody id="tabela_avaliacao"></tbody>
+        </table>
+    </main>
+</body>
+
+</html>

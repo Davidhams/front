@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script>const RAIZ = "../";</script>
+    <script src="../js/config.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/carrinho-store.js"></script>
+    <script src="../js/carrinho.js" defer></script>
+    <title>Carrinho</title>
+</head>
+
+<body>
+    <header>
+        <nav id="app-nav"></nav>
+        <hr>
+    </header>
+    <main>
+        <h1>Carrinho</h1>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Preço Unitário</th>
+                    <th>Quantidade</th>
+                    <th>Subtotal</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody id="tabela_carrinho"></tbody>
+        </table>
+        <br>
+        <p id="total_carrinho"></p>
+        <br>
+        <label for="idEndereco">Endereço de entrega</label>
+        <select id="idEndereco"></select>
+        <br><br>
+        <button id="btn_finalizar">Finalizar Compra</button>
+        <br><br>
+        <p id="resposta"></p>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script>const RAIZ = "../";</script>
+    <script src="../js/config.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/meu_endereco_cadastrar.js" defer></script>
+    <title>Meus Endereços</title>
+</head>
+
+<body>
+    <header>
+        <nav id="app-nav"></nav>
+        <hr>
+    </header>
+    <main>
+        <h1>Meus Endereços</h1>
+        <br>
+        <form>
+            <label for="condominio">Condomínio (nome do empreendimento)</label>
+            <input type="text" id="condominio">
+
+            <label for="logradouro">Logradouro</label>
+            <input type="text" id="logradouro" required>
+
+            <label for="numero">Número</label>
+            <input type="text" id="numero" required>
+
+            <label for="cep">CEP</label>
+            <input type="text" id="cep" required>
+
+            <label for="proximoBR101">Este endereço é próximo da BR-101?</label>
+            <select id="proximoBR101">
+                <option value="false">Não</option>
+                <option value="true">Sim</option>
+            </select>
+
+            <br>
+            <button id="btn_cadastrar">Cadastrar Endereço</button>
+        </form>
+        <br>
+        <p id="resposta"></p>
+        <br>
+        <h2>Endereços já cadastrados</h2>
+        <table>
+            <thead><tr><th>Cód.</th><th>Logradouro</th><th>Número</th><th>CEP</th><th>Perto da BR-101?</th></tr></thead>
+            <tbody id="tabela_enderecos"></tbody>
+        </table>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script>const RAIZ = "../";</script>
+    <script src="../js/config.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/nav.js"></script>
+    <script>exigirAdmin();</script>
+    <script src="../js/entrega_cadastrar.js" defer></script>
+    <title>Cadastrar Entrega</title>
+</head>
+
+<body>
+    <header>
+        <nav id="app-nav"></nav>
+        <nav class="subnav">
+            <a href="./admin_painel.html">Painel Admin</a>
+            <a href="./entrega_cadastrar.html" class="ativo">Cadastrar</a>
+            <a href="./entrega_listar.html">Listar</a>
+            <a href="./entrega_consultar.html">Consultar</a>
+            <a href="./entrega_atualizar.html">Atualizar</a>
+            <a href="./entrega_apagar.html">Apagar</a>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <h1>Cadastrar Entrega</h1>
+        <br>
+        <form>
+            <label for="idPedido">Código do Pedido</label>
+            <input type="number" id="idPedido" required>
+
+            <label for="entregador">Entregador</label>
+            <input type="text" id="entregador">
+
+            <label for="localEntrega">Local de Entrega</label>
+            <select id="localEntrega" required>
+                <option value="PORTARIA">Portaria</option>
+                <option value="UNIDADE">Unidade</option>
+            </select>
+
+            <label for="dataHoraSaida">Data/Hora de Saída</label>
+            <input type="datetime-local" id="dataHoraSaida">
+
+            <label for="dataHoraEntrega">Data/Hora de Entrega</label>
+            <input type="datetime-local" id="dataHoraEntrega">
+
+            <br>
+            <button id="btn_cadastrar">Cadastrar</button>
+        </form>
+        <br>
+        <p id="resposta"></p>
+    </main>
+</body>
+
+</html>
